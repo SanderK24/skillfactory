@@ -1,0 +1,10 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money = float(input("Введите сумму вклада"))
+TKB = (per_cent['ТКБ'])
+SKB = (per_cent['СКБ'])
+VTB = (per_cent['ВТБ'])
+SBER = (per_cent['СБЕР'])
+stavka = [TKB, SKB, VTB, SBER]
+deposit = [money/100*TKB, money/100*SKB, money/100*VTB, money/100*SBER]
+max_dohod = max(deposit)
+print("Наибольший доход:", max_dohod)
